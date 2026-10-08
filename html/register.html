@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/register.css">
+    </head>
+    <body>
+        <main class="page">
+            <section class="card">
+                <h1>Inregistreaza-te</h1>
+                <form class="register-form" action="#" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <label for="username">Nume utilizator</label>
+                        <input type="text" name="username" placeholder="ex:ioanaTW"
+                        required>
+                    </div>
+                    <div class="row">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="..." required>
+                    </div>
+                    <div class="row two-col">
+                        <div>
+                            <label for="password">Parolă</label>
+                            <input type="password" name="email" required>
+                        </div>
+                        <div>
+                            <label for="confirm_password">Confirmă parola</label>
+                            <input type="password" name="confirm_password" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="interese">Interese</label>
+                        <div class="checkbox-grid">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="frontend" name="interese[]" value="frontend">
+                                <label for="frontend">Frontend</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="backend" name="interese[]" value="backend">
+                                <label for="backend">Backend</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="uxui" name="interese[]" value="uxui">
+                                <label for="uxui">UX/UI</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="javascript" name="interese[]" value="javascript">
+                                <label for="javascript">Javascript</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="python" name="interese[]" value="python">
+                                <label for="python">Python Web</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="wordpress" name="interese[]" value="wordpress">
+                                <label for="wordpress">Wordpress</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="typescript" name="interese[]" value="typescript">
+                                <label for="typescript">TypeScript</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="gen">Gen</label>
+                        <div class="checkbox-grid">
+                            <div class="checkbox-item">
+                                <input type="radio" id="html" name="gen" value="HTML">
+                                <label for="html">Femeie</label><br>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" id="css" name="gen" value="CSS">
+                                <label for="css">Barbat</label><br>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" id="javascript" name="gen" value="JavaScript">
+                                <label for="javascript">Altul</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="dob">Date of birth</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+
+                    <div class="row">
+                        <label for="avatar">Avatar</label>
+                        <input type="file" id="avatar" name="avatar">
+                    </div>
+
+                    <div class="row">
+                        <label for="desc">Scurta descriere</label>
+                        <textarea id="desc" name="desc"></textarea>
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit" class="btn primary">Creaza cont</button>
+                        <button type="reset" class="btn ghost">Reseteaza</button>
+                    </div>
+                    <p class="login-link"> Ai deja cont?
+                        <a href="login.html">Mergi la login</a>
+                    </p>
+                    
+
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

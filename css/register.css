@@ -1,0 +1,94 @@
+html, body {
+    background: linear-gradient(90deg, #3471B8,#024A76);
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width:100%;
+}
+.card {
+max-width: 100%;
+max-width:800px;
+border:1px gray solid;
+border-radius:15px;
+background-color: lightgray;
+padding:20px;
+}
+h1 {
+    color:darkgoldenrod;
+}
+.row {
+margin-bottom: 30px;
+text-align: left;
+}
+.row label {
+display: block;
+margin-bottom: 6px;
+font-weight: bold;
+}
+input, select, textarea {
+width: 100%;
+    border-radius: 10px;
+    border: 0px gray solid;
+    background-color: rgb(244, 222, 222);
+    font-size: 15px;
+    box-sizing: border-box;
+    padding:5px;
+}
+input:focus, select:focus, textarea:focus {
+    background-color:rgb(140, 139, 139);
+    transition:0.2s;
+}
+.two-col {
+display: flex;
+gap: 12px;
+}
+.two-col > div {
+flex: 1;
+}
+.checkbox-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.checkbox-item {
+    display: flex;
+    flex-direction: column; /* Places label under the checkbox */
+    align-items: center;    /* Centers checkbox and label vertically */
+    text-align: center;
+    width: 100px;           /* Sets width so 3+ items fit per row */
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.btn {
+
+    border:none;
+    border-radius:5%;
+    padding:10px;
+    font-size:15px;
+    transition:0.2s;
+}
+.btn.primary {
+    background-color:#3471B8;
+    color:white;
+}
+.btn.primary:hover {
+    background-color:#024A76;
+}
+.btn.ghost {
+    background-color:none;
+}
+.login-link {
+    color:gray;
+}
+.login-link a {
+    color:darkgoldenrod;
+}
