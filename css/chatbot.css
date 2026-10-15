@@ -1,0 +1,33 @@
+body {
+background: linear-gradient(90deg, #3471B8,#024A76);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+flex-direction: column;
+}
+
+.chat-container {
+max-width: 800px;
+width: 90%;
+height: 100%;
+padding: 30px;
+background-color: darkgray;
+border-radius: 1%;
+box-shadow: 10px 10px 10px black;
+margin-bottom: 5px;
+overflow-y: scroll;
+}
+
+.message {
+margin-bottom: 20px;
+}
+#chat-form {
+display: flex;
+max-width:800px;
+width:90%;
+}
+#chat-form #user-input{
+    width:100%;
+}
