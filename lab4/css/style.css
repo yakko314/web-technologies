@@ -1,0 +1,77 @@
+body{
+    margin:0;
+    background-color:antiquewhite
+}
+
+.important{
+    color:red;
+    padding:20px;
+    font-size:50px;
+}
+
+p{
+    color:blue;
+}
+
+.card{
+    background-color:beige;
+    width:300px;
+
+    padding:10px;
+    border: 5px black double;
+}
+
+.card-a{
+    box-sizing:content-box;
+}
+.card-b{
+    box-sizing:border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color:yellow;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(min(100%, 240px), 1fr));
+    gap: 1rem;
+}
+
+/* step 5 */
+.layout { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    /* max-width:800px; */
+    background-color:cyan;
+}
+@media (min-width: 768px) {
+    .layout { 
+        grid-template-columns: 1fr 2fr; 
+    }
+}
+
